@@ -4,7 +4,7 @@ import Widget from "./Widget"
 
 const Header = () => {
   return (
-    <header className="flex flex-row bg-background m-5 rounded overflow-hidden justify-between">
+    <header className="flex flex-row bg-background rounded overflow-hidden justify-between opacity-80">
       <Nav /> 
       <div className="flex flex-row items-center">
         <Widget type="clock" />

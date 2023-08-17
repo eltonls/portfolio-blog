@@ -14,6 +14,9 @@ export default {
       fontFamily: {
         sans: ['Glory', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif']
+      },
+      backgroundImage: {
+        'hero-pattern': "url('./assets/images/bg.jpg')"
       }
     },
   },
