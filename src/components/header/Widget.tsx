@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import { FaClock } from "react-icons/fa"
 import { FaBatteryFull } from "react-icons/fa"
 
@@ -6,6 +7,15 @@ type WidgetPropsType = {
 }
 
 const Widget = (props: WidgetPropsType) => {
+  const [clock, setClock] = useState(new Date())
+
+  useEffect(() => {
+    const interval = setInterval(() => setClock(new Date()), 1000)
+
+    return () => {
+      clearInterval(interval);
+    }
+  })
 
   if(props.type === "clock") {
     return (
@@ -14,7 +24,7 @@ const Widget = (props: WidgetPropsType) => {
           <FaClock className="text-2xl" />
         </div>
         <div className="w-3/5 p-2 text-foreground font-sans font-semibold">
-          20:00
+          {`${clock.getHours()}`}:{`${clock.getMinutes()}`}
         </div>
       </div>
     )
