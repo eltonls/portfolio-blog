@@ -30,6 +30,12 @@ const Projects = () => {
           photoUrl="https://i.imgur.com/lUpQ1vk.png" 
           link="https://gameshark-react.vercel.app/"
           />
+        <ProjectCard 
+          title="Tempero Digital" 
+          desc="App de Cardápio Digital criado para android utilizando Kotlin e XML. Foi o primeiro projeto que eu fiz para me familiarizar com Android"
+          photoUrl="https://i.ibb.co/GprH8Cp/Screenshot-20240325-123347-1.png" 
+          link="https://github.com/eltonls/tempero-digital-kt"
+          />
       </div>
     </section>
   )

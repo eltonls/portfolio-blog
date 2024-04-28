@@ -8,7 +8,7 @@ type ProjectCardPropsType = {
 
 const ProjectCard = (props: ProjectCardPropsType) => {
   return (
-    <div className="flex flex-col overflow-hidden m-2 w-64 sm:grow sm:m-0.5 bg-background rounded">
+    <div className="flex flex-col overflow-hidden m-2 w-64 sm:m-0.5 bg-background rounded">
       <div className="w-full overflow-hidden h-58" id="image-box">
         <a href={props.link}>
           <img className="w-full h-full" src={props.photoUrl} /> 
